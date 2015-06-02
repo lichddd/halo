@@ -1,0 +1,180 @@
+body
+{	
+	background-color: #000000;
+	margin: 0px;
+}
+
+#left
+{
+	position: fixed;
+
+	height: 100%;
+}
+#right
+{
+	position: fixed;
+
+	right: 0px;
+	width: 400px;
+	height: 100%;
+}
+.pinkleft
+{
+	position: absolute;
+	background: url(img/pink.png) 0px -400px no-repeat;
+	height: 220px;
+  width: 400px;
+  bottom: 0px;
+
+  
+  
+}
+.blueleft
+{
+	position: absolute;
+	background: url(img/blue.png) no-repeat;
+	height: 400px;
+  width: 400px;
+}
+.greenleft
+{
+	position: absolute;
+	background: url(img/green.png) no-repeat;
+	height: 400px;
+  width: 400px;
+}
+
+
+
+.pinkright
+{
+	position: absolute;
+	background: url(img/pink.png) -683px 0px no-repeat;
+	height: 100%;
+  width: 400px;
+  bottom: 0px;
+}
+.blueright
+{
+	position: absolute;
+	background: url(img/blue.png) -483px 0px no-repeat;
+	height: 100%;
+  width: 400px;
+}
+.greenright
+{
+	position: absolute;
+	background: url(img/green.png) -683px 0px no-repeat;
+	height: 100%;
+  width: 400px;
+}
+
+
+
+
+
+
+#pinkleft
+{
+
+  	animation: myfirst2 5s 1s infinite;
+	-moz-animation: myfirst2 5s 1s infinite;
+	-webkit-animation: myfirst2 5s 1s infinite;
+	-o-animation: myfirst2 5s 1s infinite;
+  
+  
+}
+#blueleft
+{
+animation: myfirst2 5s 1s infinite;
+	-moz-animation: myfirst2 5s 1s infinite;
+	-webkit-animation: myfirst2 5s 1s infinite;
+	-o-animation: myfirst2 5s 1s infinite;
+}
+#greenleft
+{
+animation: myfirst2 5s 1.5s infinite;
+	-moz-animation: myfirst2 5s 1.5s infinite;
+	-webkit-animation: myfirst2 5s 1.5s infinite;
+	-o-animation: myfirst2 5s 1.5s infinite;
+}
+
+
+
+#pinkright
+{
+animation: myfirst2 5s 2s infinite;
+	-moz-animation: myfirst2 5s 2s infinite;
+	-webkit-animation: myfirst2 5s 2s infinite;
+	-o-animation: myfirst2 5s 2s infinite;
+}
+#blueright
+{
+animation: myfirst2 5s 3s infinite;
+	-moz-animation: myfirst2 5s 3s infinite;
+	-webkit-animation: myfirst2 5s 3s infinite;
+	-o-animation: myfirst2 5s 3s infinite;
+}
+#greenright
+{
+animation: myfirst2 5s 3.5s infinite;
+	-moz-animation: myfirst2 5s 3.5s infinite;
+	-webkit-animation: myfirst2 3.5s 1s infinite;
+	-o-animation: myfirst2 5s 3.5s infinite;
+}
+
+
+
+
+
+
+
+
+
+@keyframes myfirst2
+{
+0% {
+    opacity:1;}
+    
+50% {
+    opacity:0;}
+    
+100% {
+    opacity:1;}
+}
+
+@-moz-keyframes myfirst2/* Firefox */
+{
+0% {
+    opacity:1;}
+    
+50% {
+    opacity:0;}
+    
+100% {
+    opacity:1;}
+}
+
+@-webkit-keyframes myfirst2/* Safari and Chrome */
+{
+0% {
+    opacity:1;}
+    
+50% {
+    opacity:0;}
+    
+100% {
+    opacity:1;}
+}
+
+@-o-keyframes myfirst2/* Opera */
+{
+0% {
+    opacity:1;}
+    
+50% {
+    opacity:0;}
+    
+100% {
+    opacity:1;}
+}
