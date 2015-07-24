@@ -2,6 +2,83 @@ body {
 	background-color: #000000;
 	margin: 0px;
 }
+.threediv
+{
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  top: 200px;
+}
+
+
+img:nth-child(1)
+{
+animation: s3d 5s 1s infinite;
+-moz-animation: s3d 5s 1s infinite;
+-webkit-animation: s3d 5s 1s infinite;
+-o-animation: s3d 5s 1s infinite;
+}
+
+img:nth-child(2)
+{
+animation: s3d 5s 2s infinite;
+-moz-animation: s3d 5s 2s infinite;
+-webkit-animation: s3d 5s 2s infinite;
+-o-animation: s3d 5s 2s infinite;
+}
+
+img:nth-child(3)
+{
+animation: s3d 5s 3s infinite;
+-moz-animation: s3d 5s 3s infinite;
+-webkit-animation: s3d 5s 3s infinite;
+-o-animation: s3d 5s 3s infinite;
+}
+
+img:nth-child(4)
+{
+animation: s3d 5s 4s infinite;
+-moz-animation: s3d 5s 4s infinite;
+-webkit-animation: s3d 5s 4s infinite;
+-o-animation: s3d 5s 4s infinite;
+}
+img:nth-child(5)
+{
+animation: s3d 5s 5s infinite;
+-moz-animation: s3d 5s 5s infinite;
+-webkit-animation: s3d 5s 5s infinite;
+-o-animation: s3d 5s 5s infinite;
+}
+
+img
+{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	/*transition:0.5s;*/
+/*transition:all;
+    
+-moz-transition-duration:0.5s;
+-moz-transition-property:all;
+-webkit-transition-duration:0.5s;
+-webkit-transition-property:all;
+-o-transition-duration:0.5s;
+-o-transition-property:all;*/
+
+
+/*
+animation: s3d 5s 0s infinite;
+-moz-animation: s3d 5s 0s infinite;
+-webkit-animation: s3d 5s 0s infinite;
+-o-animation: s3d 5s 0s infinite;*/
+
+
+}
+
+
 .pink {
 	position: fixed;
 	width: 100%;
@@ -237,5 +314,46 @@ animation: myfirst2 5s 3.5s infinite;
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+
+
+@-webkit-keyframes s3d
+
+{
+	0% {
+		transform: translateX(250px) translateZ(-100px) rotateY(-50deg);
+		visibility: hidden;
+		opacity: 0;
+	}
+	1% {
+		transform: translateX(250px) translateZ(-100px) rotateY(-50deg);
+		visibility: visible;
+		opacity: 1;
+	}
+	25% {
+		transform: translateX(150px) translateZ(-100px) rotateY(-25deg);
+	}
+	50% {
+		transform: translateX(0px) translateZ(0px) rotateY(0deg);
+	}
+	75% {
+		transform: translateX(-150px) translateZ(-100px) rotateY(25deg);
+	}
+	98% {
+		transform: translateX(-250px) translateZ(-100px) rotateY(50deg);
+		visibility: visible;
+		opacity: 1;
+	}
+	99% {
+		translateX(-250px) translateZ(-100px) rotateY(50deg);
+		visibility: hidden;
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(250px) translateZ(-100px) rotateY(-50deg);
+		visibility: hidden;
+		opacity: 0;
 	}
 }
