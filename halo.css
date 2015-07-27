@@ -16,59 +16,77 @@ body {
 
 img:nth-child(1)
 {
-animation: s3d 5s 1s infinite;
--moz-animation: s3d 5s 1s infinite;
--webkit-animation: s3d 5s 1s infinite;
--o-animation: s3d 5s 1s infinite;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+		transform: translateX(350px) translateZ(-100px) rotateY(-50deg);
+		visibility: hidden;
+		opacity: 0;
 }
 
 img:nth-child(2)
 {
-animation: s3d 5s 2s infinite;
--moz-animation: s3d 5s 2s infinite;
--webkit-animation: s3d 5s 2s infinite;
--o-animation: s3d 5s 2s infinite;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(250px) translateZ(-100px) rotateY(-50deg);
+		visibility: visible;
+		opacity: 1;
 }
 
 img:nth-child(3)
 {
-animation: s3d 5s 3s infinite;
--moz-animation: s3d 5s 3s infinite;
--webkit-animation: s3d 5s 3s infinite;
--o-animation: s3d 5s 3s infinite;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(150px) translateZ(-100px) rotateY(-25deg);
 }
 
 img:nth-child(4)
 {
-animation: s3d 5s 4s infinite;
--moz-animation: s3d 5s 4s infinite;
--webkit-animation: s3d 5s 4s infinite;
--o-animation: s3d 5s 4s infinite;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(0px) translateZ(0px) rotateY(0deg);
 }
 img:nth-child(5)
 {
-animation: s3d 5s 5s infinite;
--moz-animation: s3d 5s 5s infinite;
--webkit-animation: s3d 5s 5s infinite;
--o-animation: s3d 5s 5s infinite;
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(-150px) translateZ(-100px) rotateY(25deg);
 }
+img:nth-child(6)
+{
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(-250px) translateZ(-100px) rotateY(50deg);
+		visibility: visible;
+		opacity: 1;
+}
+img:nth-child(7)
+{
+	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 0.1)));
+
+transform: translateX(-350px) translateZ(-100px) rotateY(50deg);
+		visibility: hidden;
+		opacity: 0;
+}
+
+
+
 
 img
 {
 	width: 200px;
 	height: 150px;
 	position: absolute;
-	/*transition:0.5s;*/
-/*transition:all;
+	transition:0.5s;
+transition:all;
     
 -moz-transition-duration:0.5s;
 -moz-transition-property:all;
 -webkit-transition-duration:0.5s;
 -webkit-transition-property:all;
 -o-transition-duration:0.5s;
--o-transition-property:all;*/
+-o-transition-property:all;
 
-
+	
 /*
 animation: s3d 5s 0s infinite;
 -moz-animation: s3d 5s 0s infinite;

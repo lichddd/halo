@@ -1,16 +1,8 @@
 $().ready(function () {
 	
 	
+	setTimeout(timer,1000)
 	
-	$('img').each(function (num,element) {
-		
-		
-		$(this).on('click', function(e) {
-			getprop(rotateY)
-		});
-		
-		
-	});
 	
 	
 	
@@ -18,6 +10,12 @@ $().ready(function () {
 	
 	
 });
+
+function timer () {
+	$($('img')[6]).prependTo($('.threediv'));
+	setTimeout(timer,1000);
+}
+
 
 function getprop (str,code)
     {
