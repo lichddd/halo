@@ -1,4 +1,18 @@
 $().ready(function () {
+//	console.log($('#temdiv img').length);
+	$('#temdiv img').each(function () {
+		if ($('.threediv img').length<7) {
+			$(this).prependTo($('.threediv'));
+		}
+		
+		
+	});
+	
+	
+	
+	
+	
+	
 	
 	
 	setTimeout(timer,1000)
@@ -12,7 +26,11 @@ $().ready(function () {
 });
 
 function timer () {
-	$($('img')[6]).prependTo($('.threediv'));
+	$($('img')[6]).appendTo($('#temdiv'));
+	
+	
+	
+	$($('#temdiv img')[0]).prependTo($('.threediv'));
 	setTimeout(timer,1000);
 }
 
